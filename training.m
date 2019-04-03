@@ -41,7 +41,7 @@ fprintf('Training the algorithm... \n')
 
 % set regularization paramater lambda and number of iterations
 lambda = 1;
-options = optimset('MaxIter', 100);
+options = optimset('MaxIter', 250);
 
 % Create "short hand" for the cost function to be minimized
 costFunction = @(p) nnCostFunction(p, ...
